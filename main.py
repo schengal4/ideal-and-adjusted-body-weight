@@ -9,8 +9,8 @@ def calculate_ideal_weight(gender, height_inches):
 
 st.title("Ideal Body Weight")
 gender = st.radio("Select Gender", ["Male", "Female"])
-height_cm = st.number_input("Enter your height in inches", min_value=1)
+height_in = st.number_input("Enter your height in inches", min_value=1)
 if st.button("Calculate"):
-    ideal_weight = calculate_ideal_weight(gender, height_cm)
+    ideal_weight = calculate_ideal_weight(gender, height_in)
     st.write(f"Your ideal body weight is {ideal_weight:.2f} kg.")
 
